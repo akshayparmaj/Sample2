@@ -1,0 +1,2181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#641d2b">
+<meta name="description" content="You are warmly invited to celebrate the wedding of Akshay and Prashasti on 27 January 2027 in Nagpur.">
+
+<title>Akshay & Prashasti | The Wedding Celebration</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=MonteCarlo&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --maroon: #641d2b;
+    --wine: #43131f;
+    --red: #8f3440;
+    --gold: #c49a48;
+    --gold-light: #e7cf91;
+    --cream: #fff8e9;
+    --paper: #fffdf7;
+    --names: "MonteCarlo", "Cormorant Garamond", cursive;
+    --ink: #39252a;
+    --muted: #806b68;
+    --line: #e8d8b8;
+    --saffron: #d77a27;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 78px;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Lato", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .24;
+    background-color: var(--cream);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'%3E%3Cg fill='none' stroke='%23b98770' stroke-width='1.5' stroke-linecap='round' opacity='.8'%3E%3Cpath d='M34 52c-13-17-7-31 5-34 13 9 14 22-5 34Zm0 0c-20-7-29 2-27 15 14 8 26 1 27-15Zm0 0c7 20 20 23 29 13-1-16-13-23-29-13Zm0 0c17-14 14-27 2-33-13 9-14 22-2 33Z' fill='%23e8b8ad' fill-opacity='.48'/%3E%3Ccircle cx='34' cy='52' r='4' fill='%23c49a48'/%3E%3Cpath d='M34 56c-2 20-12 29-25 34m25-21c12 2 20 10 24 20m-48-8c-9-2-14 2-17 9'/%3E%3Cpath d='M216 184c-13-17-7-31 5-34 13 9 14 22-5 34Zm0 0c-20-7-29 2-27 15 14 8 26 1 27-15Zm0 0c7 20 20 23 29 13-1-16-13-23-29-13Zm0 0c17-14 14-27 2-33-13 9-14 22-2 33Z' fill='%23e8b8ad' fill-opacity='.48'/%3E%3Ccircle cx='216' cy='184' r='4' fill='%23c49a48'/%3E%3Cpath d='M216 188c-2 20-12 29-25 34m25-21c12 2 20 10 24 20m-48-8c-9-2-14 2-17 9'/%3E%3Cpath d='M155 36c-7-12-3-22 6-25 10 7 10 16-6 25Zm0 0c-14-5-21 1-19 11 10 6 18 1 19-11Zm0 0c5 14 14 16 21 9-1-11-9-16-21-9Z' fill='%23d9b88a' fill-opacity='.42'/%3E%3Ccircle cx='155' cy='36' r='3' fill='%23c49a48'/%3E%3Cpath d='M100 220c-8-13-3-23 6-26 10 7 11 17-6 26Zm0 0c-15-5-21 1-20 12 11 6 19 1 20-12Zm0 0c5 15 15 17 22 10-1-12-10-17-22-10Z' fill='%23e8b8ad' fill-opacity='.42'/%3E%3Ccircle cx='100' cy='220' r='3' fill='%23c49a48'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 260px 260px;
+    background-repeat: repeat;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+/* =========================================
+   JAIN TEMPLE OPENING SCREEN
+========================================= */
+
+.temple-gate {
+    min-height: 100svh;
+    min-height: 100dvh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding:
+        max(25px, env(safe-area-inset-top))
+        18px
+        max(25px, env(safe-area-inset-bottom));
+
+    background:
+        radial-gradient(
+            ellipse at 50% 35%,
+            #7e3440 0%,
+            #581d2b 54%,
+            #35111b 100%
+        );
+
+    color: #fff6df;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.temple-gate:before,
+.temple-gate:after {
+    content: "";
+    position: absolute;
+    inset: 17px;
+    border: 1px solid #d7b66c88;
+    pointer-events: none;
+}
+
+.temple-gate:after {
+    inset: 25px;
+    border-color: #d7b66c44;
+}
+
+.gate-frame {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 650px);
+    margin: auto;
+    padding: clamp(12px, 3vh, 35px) 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gate-eyebrow {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-size: clamp(2rem, 7vw, 3.6rem);
+    line-height: 1.2;
+    color: #f0d89d;
+    text-shadow: 0 0 18px #d9b66d66;
+}
+
+.gate-subtitle {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-size: clamp(1.3rem, 4.5vw, 2.2rem);
+    color: #ead8b5;
+    margin-top: 6px;
+}
+
+/* Temple button */
+
+.temple-trigger {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin: clamp(10px, 2vh, 20px) auto;
+    padding: 8px 5px 14px;
+
+    border: 0;
+    background: transparent;
+    color: inherit;
+    border-radius: 12px;
+    -webkit-tap-highlight-color: transparent;
+
+    transition: transform .3s, filter .3s;
+}
+
+.temple-trigger:hover,
+.temple-trigger:focus-visible {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 8px 18px #e3bd6b44);
+    outline: 1px solid #d7b66c;
+}
+
+.temple-art {
+    display: block;
+
+    width: min(520px, 88vw);
+    max-width: 100%;
+    height: auto;
+
+    max-height: min(53svh, 470px);
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 5px 12px #1c0710aa);
+    overflow: visible;
+}
+
+.temple-click-label {
+    font-size: clamp(.58rem, 2vw, .72rem);
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: #f2dfb2;
+}
+
+.temple-click-icon {
+    font-size: 1.35rem;
+    color: #d9b66d;
+    animation: bob 1.5s infinite;
+}
+
+.gate-date {
+    font-size: .72rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #e8cf91;
+    margin-top: 4px;
+}
+
+.gate-hint {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.15rem;
+    color: #e7d8bd;
+    margin-top: 16px;
+}
+
+@keyframes bob {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+/* Temple lighting */
+
+.aura {
+    opacity: .90;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: aura 7s ease-in-out infinite alternate;
+}
+
+@keyframes aura {
+    from { opacity: .28; }
+    to { opacity: .42; }
+}
+
+.lights {
+    opacity: .75;
+    animation: breathe 6s ease-in-out infinite alternate;
+}
+
+@keyframes breathe {
+    from { opacity: .62; }
+    to { opacity: .85; }
+}
+
+.idol-glow {
+    animation: idol 5s ease-in-out infinite alternate;
+}
+
+@keyframes idol {
+    from { opacity: .75; }
+    to { opacity: 1; }
+}
+
+.lamp {
+    animation: flicker 1.7s ease-in-out infinite alternate;
+}
+
+.lamp:nth-child(3n) {
+    animation-duration: 1.3s;
+    animation-delay: -.4s;
+}
+
+.lamp:nth-child(3n+1) {
+    animation-duration: 2.1s;
+    animation-delay: -.9s;
+}
+
+@keyframes flicker {
+    0% { opacity: .72; }
+    40% { opacity: 1; }
+    70% { opacity: .82; }
+    100% { opacity: .95; }
+}
+
+.ripple {
+    animation: ripple 9s ease-in-out infinite alternate;
+}
+
+.ripple.b {
+    animation-duration: 12s;
+    animation-delay: -4s;
+}
+
+@keyframes ripple {
+    from { transform: translateX(-10px); }
+    to { transform: translateX(10px); }
+}
+
+.mist {
+    animation: mist 22s ease-in-out infinite alternate;
+}
+
+@keyframes mist {
+    from { transform: translateX(-30px); }
+    to { transform: translateX(30px); }
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #fff8e9ed;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav {
+    max-width: 1180px;
+    margin: auto;
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.brand {
+    font-family: var(--names);
+    font-size: 2.0rem;
+    font-weight: 400;
+    color: var(--maroon);
+    white-space: nowrap;
+}
+
+.brand h3 {
+    margin: 0;
+    font-weight: 1000;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navlinks a {
+    font-size: .75rem;
+    text-decoration: none;
+    color: var(--maroon);
+    letter-spacing: .06em;
+}
+
+.navlinks a:hover {
+    color: var(--saffron);
+}
+
+.music-btn {
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--maroon);
+    padding: 8px 12px;
+    font-size: .72rem;
+    border-radius: 30px;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: calc(100vh - 58px);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 60px 18px;
+    position: relative;
+    overflow: hidden;
+    color: #fff8e9;
+
+    background:
+        linear-gradient(135deg, #45131fef, #762637ef),
+        url("https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+}
+
+.hero:before,
+.hero:after {
+    content: "";
+    position: absolute;
+    inset: 22px;
+    border: 1px solid #d8b76d99;
+    pointer-events: none;
+}
+
+.hero:after {
+    inset: 30px;
+    border-color: #d8b76d55;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    width: min(760px, 100%);
+    padding: clamp(32px, 6vw, 70px) 22px;
+}
+
+.ornament {
+    font-size: 2rem;
+    color: var(--gold-light);
+    letter-spacing: .3em;
+}
+
+.eyebrow,
+.kicker {
+    font-size: .68rem;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    color: var(--gold);
+    font-weight: 500;
+}
+
+.hero .eyebrow {
+    color: var(--gold-light);
+    margin-top: 18px;
+}
+
+.hero h1 {
+    font-family: var(--names);
+    font-size: clamp(3.4rem, 11vw, 6.6rem);
+    font-weight: 400;
+    line-height: .92;
+    margin: 22px 0 8px;
+    color: #fff8e9;
+}
+
+.hero h1 span {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: .43em;
+    color: var(--gold-light);
+    font-style: italic;
+    margin: 8px;
+}
+
+.invite-text {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.15rem, 3.6vw, 1.45rem);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 14px auto;
+    color: #f6e9cf;
+}
+
+.date-line {
+    margin: 26px 0;
+    color: var(--gold-light);
+}
+
+.dl-date {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.2rem, 7vw, 3.6rem);
+    font-weight: 600;
+    letter-spacing: .04em;
+    line-height: 1.1;
+    color: #f4dfa5;
+}
+
+.dl-date sup {
+    font-size: .5em;
+    vertical-align: .8em;
+}
+
+.dl-place {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.4rem, 4.5vw, 2rem);
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+
+/* =========================================
+   COMMON COMPONENTS
+========================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid var(--gold);
+    background: var(--gold);
+    color: var(--wine);
+    padding: 13px 21px;
+    text-decoration: none;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    transition: .2s;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+.btn.outline {
+    background: transparent;
+    color: var(--maroon);
+}
+
+section {
+    padding: 82px 20px;
+}
+
+.inner {
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+
+.kicker {
+    color: var(--saffron);
+}
+
+h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.75rem, 6vw, 4.1rem);
+    font-weight: 500;
+    color: var(--maroon);
+    line-height: 1;
+    margin: 12px 0 20px;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: .10rem;
+    line-height: 1;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--gold);
+    margin: 20px auto;
+    font-size: 1.25rem;
+}
+
+.divider:before,
+.divider:after {
+    content: "";
+    height: 1px;
+    width: 65px;
+    background: var(--gold);
+}
+
+/* =========================================
+   COUNTDOWN
+========================================= */
+
+.countdown-section {
+    background: var(--paper);
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 650px;
+    margin: 34px auto 15px;
+}
+
+.countbox {
+    padding: 22px 8px;
+    background: linear-gradient(145deg, #fffdf8, #f8eedb);
+    border: 1px solid var(--line);
+    box-shadow: 0 8px 24px #5c2a170b;
+}
+
+.countbox strong {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.1rem, 6vw, 3.2rem);
+    font-weight: 500;
+    color: var(--maroon);
+    line-height: 1.1;
+}
+
+.countbox span {
+    font-size: .62rem;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: var(--muted);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+/* =========================================
+   FAMILIES
+========================================= */
+
+.families {
+    background: var(--cream);
+}
+
+.parents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 36px;
+}
+
+.parent-card {
+    padding: 34px 22px;
+    background: var(--paper);
+    border: 1px solid var(--gold);
+    outline: 1px solid var(--line);
+    outline-offset: 6px;
+    box-shadow: 0 10px 26px #5c2a170f;
+}
+
+.parent-card h3 {
+    font-family: var(--names);
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: var(--maroon);
+    margin: 6px 0 2px;
+}
+
+.parent-card .relation {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--saffron);
+    margin: 0;
+}
+
+.parent-card .pname {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.5;
+    margin: 10px 0 0;
+}
+
+/* =========================================
+   OUR STORY
+========================================= */
+
+.story {
+    background: #f3e8d4;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px;
+    align-items: center;
+    margin-top: 38px;
+    text-align: left;
+}
+
+.story-photo {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border: 9px solid var(--paper);
+    outline: 1px solid var(--gold);
+    box-shadow: 0 15px 35px #43201818;
+}
+
+.story-copy {
+    padding: 10px;
+}
+
+.story-copy h3 {
+    font-family: var(--names);
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: var(--maroon);
+    margin: 8px 0;
+}
+
+.story-copy p {
+    color: var(--muted);
+    font-size: .9rem;
+    line-height: 2;
+    white-space: pre-line;
+}
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 36px;
+}
+
+.gallery figure {
+    margin: 0;
+    background: var(--paper);
+    padding: 8px;
+    border: 1px solid var(--line);
+    box-shadow: 0 8px 22px #5c2a170b;
+    overflow: hidden;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+    transition: transform .45s;
+}
+
+.gallery figure:hover img {
+    transform: scale(1.045);
+}
+
+.gallery figcaption {
+    font-size: .65rem;
+    letter-spacing: .16em;
+    color: var(--maroon);
+    padding: 13px 5px 7px;
+}
+
+/* =========================================
+   EVENTS
+========================================= */
+
+.events-section {
+    background: var(--paper);
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.event {
+    position: relative;
+    padding: 30px 22px;
+    background: #fffaf0;
+    border: 1px solid var(--line);
+    min-height: 230px;
+}
+
+.event:before {
+    content: "✥";
+    display: block;
+    color: var(--gold);
+    font-size: 1.6rem;
+}
+
+.event .time {
+    font-size: .65rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-top: 12px;
+}
+
+.event h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--maroon);
+    margin: 10px 0;
+}
+
+.event p {
+    font-size: .82rem;
+    line-height: 1.8;
+    color: var(--muted);
+    margin: 0;
+}
+
+/* =========================================
+   VENUE
+========================================= */
+
+.venue {
+    color: #fff8e9;
+    background:
+        linear-gradient(135deg, #43131ff5, #6d2433f5),
+        url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+}
+
+.venue h2 {
+    color: #fff8e9;
+}
+
+.venue .intro {
+    color: #f1dfd2;
+}
+
+.venue .kicker {
+    color: var(--gold-light);
+}
+
+.venue .btn {
+    margin-top: 25px;
+}
+
+.venue .divider:before,
+.venue .divider:after {
+    background: var(--gold);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+    padding: 38px 18px 46px;
+    background: var(--wine);
+    color: #f8e9d0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+}
+
+footer strong {
+    font-family: var(--names);
+    font-weight: 500;
+    display: block;
+    color: var(--gold-light);
+    font-size: 2.1rem;
+    margin-top: 8px;
+}
+
+.heart {
+    color: #e6a0a0;
+}
+
+.fade {
+    animation: rise .9s both;
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .temple-art {
+        width: min(460px, 82vw);
+        max-height: 52svh;
+    }
+
+    .navlinks {
+        gap: 12px;
+    }
+
+    .story-grid {
+        gap: 22px;
+    }
+
+    .events {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 760px) {
+
+    .temple-gate {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .gate-frame {
+        padding: 10px 5px;
+    }
+
+    .temple-art {
+        width: min(400px, 86vw);
+        max-height: 49svh;
+    }
+
+    .parents {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .story-photo {
+        height: 330px;
+    }
+
+    .events {
+        grid-template-columns: 1fr;
+    }
+
+    .event {
+        min-height: 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 64px 16px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .temple-gate {
+        min-height: 100svh;
+        padding: max(18px, env(safe-area-inset-top))
+                 12px
+                 max(18px, env(safe-area-inset-bottom));
+    }
+
+    .temple-gate:before {
+        inset: 9px;
+    }
+
+    .temple-gate:after {
+        inset: 16px;
+    }
+
+    .gate-frame {
+        width: 100%;
+        padding: 8px 4px;
+    }
+
+    .gate-eyebrow {
+        font-size: clamp(2rem, 9vw, 2.7rem);
+    }
+
+    .gate-subtitle {
+        font-size: clamp(1.25rem, 6vw, 1.8rem);
+    }
+
+    .temple-trigger {
+        margin: 8px auto;
+        gap: 7px;
+    }
+
+    .temple-art {
+        width: min(340px, 84vw);
+        max-height: 44svh;
+    }
+
+    .temple-click-label {
+        font-size: .57rem;
+        letter-spacing: .13em;
+    }
+
+    .temple-click-icon {
+        font-size: 1.1rem;
+    }
+
+    .gate-date {
+        font-size: .62rem;
+    }
+
+    .nav {
+        padding: 10px 12px;
+        display: block;
+    }
+
+    .brand {
+        text-align: center;
+        margin-bottom: 8px;
+        font-size: 1.15rem;
+    }
+
+    .navlinks {
+        justify-content: center;
+        gap: 11px;
+    }
+
+    .navlinks a {
+        font-size: .62rem;
+    }
+
+    .music-btn {
+        padding: 6px 9px;
+        font-size: .62rem;
+    }
+
+    .hero {
+        min-height: 82vh;
+        padding: 30px 12px;
+    }
+
+    .hero:before {
+        inset: 12px;
+    }
+
+    .hero:after {
+        inset: 19px;
+    }
+
+    .hero h1 {
+        font-size: 3.6rem;
+    }
+
+    .countdown {
+        gap: 6px;
+    }
+
+    .countbox {
+        padding: 15px 3px;
+    }
+
+    .countbox span {
+        font-size: .54rem;
+        letter-spacing: .08em;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .gallery img {
+        height: 190px;
+    }
+
+    .gallery figcaption {
+        font-size: .57rem;
+    }
+
+    .actions .btn {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   VERY SHORT MOBILE SCREENS
+========================================= */
+
+@media (max-height: 650px) and (max-width: 760px) {
+
+    .temple-gate {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .gate-frame {
+        padding: 4px;
+    }
+
+    .gate-eyebrow {
+        font-size: 1.9rem;
+    }
+
+    .gate-subtitle {
+        font-size: 1.2rem;
+        margin-top: 2px;
+    }
+
+    .temple-trigger {
+        margin: 4px auto;
+        gap: 4px;
+    }
+
+    .temple-art {
+        width: min(290px, 72vw);
+        max-height: 39svh;
+    }
+
+    .gate-date {
+        margin-top: 0;
+    }
+
+    .temple-click-icon {
+        font-size: 1rem;
+    }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .fade {
+        animation: none;
+    }
+
+    .temple-click-icon,
+    .aura,
+    .lights,
+    .idol-glow,
+    .lamp,
+    .ripple,
+    .mist {
+        animation: none !important;
+    }
+
+    * {
+        transition: none !important;
+    }
+}
+
+
+
+/* =========================================
+   CINEMATIC MOTION & PREMIUM FINISH
+========================================= */
+:root {
+    --ease-luxe: cubic-bezier(.22, 1, .36, 1);
+}
+body {
+    font-family: "Lato", Arial, sans-serif;
+    letter-spacing: .01em;
+}
+::selection { background: #c49a48; color: #43131f; }
+.topbar { transition: box-shadow .35s ease, background .35s ease; }
+.topbar.scrolled { box-shadow: 0 8px 28px #35111b16; }
+.navlinks a { position: relative; transition: color .25s ease; }
+.navlinks a::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 100%; bottom: -6px;
+    height: 1px; background: var(--gold);
+    transition: right .35s var(--ease-luxe);
+}
+.navlinks a:hover::after { right: 0; }
+.temple-gate {
+    z-index: 50;
+    transition: opacity 1s ease, transform 1.25s var(--ease-luxe), filter 1s ease;
+}
+.temple-gate.is-opening {
+    opacity: 0;
+    transform: scale(1.055) translateY(-2.5%);
+    filter: blur(8px);
+    pointer-events: none;
+}
+.temple-gate.is-gone { display: none; }
+.gate-frame { animation: gate-arrive 1.25s var(--ease-luxe) both; }
+@keyframes gate-arrive {
+    from { opacity: 0; transform: translateY(24px) scale(.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.temple-art {
+    animation: temple-float 6s ease-in-out infinite;
+    transform-origin: 50% 55%;
+}
+@keyframes temple-float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+}
+.temple-trigger::before {
+    content: "";
+    position: absolute;
+    width: min(490px, 82vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f5c66b20, transparent 68%);
+    z-index: -1;
+    animation: halo-breathe 5s ease-in-out infinite;
+}
+@keyframes halo-breathe {
+    0%,100% { transform: scale(.88); opacity: .5; }
+    50% { transform: scale(1.12); opacity: 1; }
+}
+.temple-trigger { position: relative; isolation: isolate; }
+.gate-date { animation: soft-appear 1.4s .55s both; }
+.gate-eyebrow, .gate-subtitle { animation: soft-appear 1s .2s both; }
+@keyframes soft-appear {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.hero {
+    background-attachment: scroll;
+    isolation: isolate;
+}
+.hero::before { animation: border-in 1.5s .3s both; }
+.hero::after { animation: border-in 1.8s .55s both; }
+@keyframes border-in {
+    from { opacity: 0; inset: 38px; }
+    to { opacity: 1; }
+}
+.hero-inner > * { animation: hero-rise .9s var(--ease-luxe) both; }
+.hero-inner > :nth-child(1) { animation-delay: .12s; }
+.hero-inner > :nth-child(2) { animation-delay: .22s; }
+.hero-inner > :nth-child(3) { animation-delay: .34s; }
+.hero-inner > :nth-child(4) { animation-delay: .46s; }
+.hero-inner > :nth-child(5) { animation-delay: .58s; }
+.hero-inner > :nth-child(6) { animation-delay: .7s; }
+@keyframes hero-rise {
+    from { opacity: 0; transform: translateY(22px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+h2 { text-wrap: balance; }
+.intro { font-size: 1rem; line-height: 1.85; }
+.story-copy p, .event p, .parent-card .pname { line-height: 1.85; }
+.countbox, .parent-card, .event, .gallery figure {
+    transition: transform .55s var(--ease-luxe), box-shadow .55s ease, border-color .35s ease;
+}
+.countbox:hover, .parent-card:hover, .event:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 38px #5c2a1718;
+    border-color: var(--gold);
+}
+.gallery figure { position: relative; }
+.gallery figure::after {
+    content: "＋";
+    position: absolute;
+    inset: 8px 8px 48px;
+    display: grid;
+    place-items: center;
+    color: #fff8e9;
+    font-size: 2rem;
+    background: #35111b00;
+    opacity: 0;
+    transition: opacity .35s ease, background .35s ease;
+    pointer-events: none;
+}
+.gallery figure:hover::after { opacity: 1; background: #35111b35; }
+.gallery img { cursor: zoom-in; }
+.event::after {
+    content: "";
+    position: absolute;
+    left: 50%; bottom: 0;
+    width: 0; height: 2px;
+    background: var(--gold);
+    transition: width .45s var(--ease-luxe), left .45s var(--ease-luxe);
+}
+.event:hover::after { width: 100%; left: 0; }
+.btn { transition: transform .35s var(--ease-luxe), box-shadow .35s ease, background .25s ease; }
+.btn:hover { box-shadow: 0 10px 22px #6c3b1e24; transform: translateY(-3px); }
+.music-btn { transition: background .25s ease, color .25s ease, transform .25s ease; }
+.music-btn:hover { background: var(--maroon); color: var(--cream); transform: translateY(-2px); }
+section { scroll-margin-top: 82px; }
+.reveal {
+    opacity: 0;
+    transform: translateY(34px);
+    transition: opacity .9s var(--ease-luxe), transform .9s var(--ease-luxe);
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal-left { transform: translateX(-36px); }
+.reveal-right { transform: translateX(36px); }
+.reveal-left.is-visible, .reveal-right.is-visible { transform: translateX(0); }
+.reveal-scale { transform: translateY(20px) scale(.97); }
+.reveal-scale.is-visible { transform: translateY(0) scale(1); }
+.gallery figure:nth-child(2), .event:nth-child(2), .parent-card:nth-child(2) { transition-delay: .1s; }
+.gallery figure:nth-child(3), .event:nth-child(3) { transition-delay: .18s; }
+.gallery figure:nth-child(4), .event:nth-child(4) { transition-delay: .26s; }
+.scroll-progress {
+    position: fixed; top: 0; left: 0; z-index: 100;
+    width: 0; height: 3px;
+    background: linear-gradient(90deg, #b77a2c, #f4d98f, #b77a2c);
+    box-shadow: 0 0 10px #e7cf91aa;
+}
+.lightbox {
+    position: fixed; inset: 0; z-index: 120;
+    display: grid; place-items: center;
+    padding: 24px;
+    background: #1c0912ed;
+    opacity: 0; visibility: hidden;
+    transition: opacity .35s ease, visibility .35s ease;
+}
+.lightbox.open { opacity: 1; visibility: visible; }
+.lightbox img {
+    max-width: min(92vw, 1100px); max-height: 82vh;
+    object-fit: contain; border: 8px solid #fff8e9;
+    box-shadow: 0 25px 80px #0008;
+    transform: scale(.94);
+    transition: transform .45s var(--ease-luxe);
+}
+.lightbox.open img { transform: scale(1); }
+.lightbox-close {
+    position: absolute; top: 20px; right: 24px;
+    border: 1px solid #e7cf91; color: #fff8e9;
+    background: transparent; border-radius: 50%;
+    width: 44px; height: 44px; font-size: 1.5rem;
+}
+.lightbox-caption { color: #f4dfa5; text-align: center; margin-top: 14px; letter-spacing: .12em; font-size: .72rem; }
+.back-top {
+    position: fixed; right: 18px; bottom: 18px; z-index: 30;
+    width: 44px; height: 44px; border: 1px solid var(--gold);
+    border-radius: 50%; background: var(--maroon); color: var(--cream);
+    opacity: 0; visibility: hidden; transform: translateY(12px);
+    transition: .3s ease; box-shadow: 0 8px 20px #35111b25;
+}
+.back-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+@media (max-width: 760px) {
+    .reveal-left, .reveal-right { transform: translateY(28px); }
+    .reveal-left.is-visible, .reveal-right.is-visible { transform: translateY(0); }
+    .lightbox { padding: 12px; }
+    .lightbox img { max-width: 96vw; border-width: 5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================
+     JAIN TEMPLE OPENING SCREEN
+====================================== -->
+
+<section class="temple-gate" id="templeGate" aria-label="Open wedding invitation">
+
+    <div class="gate-frame">
+
+        <div class="gate-eyebrow" lang="hi">जय जिनेन्द्र</div>
+        <div class="gate-subtitle" lang="hi">महावीराय नमः</div>
+
+        <button
+            class="temple-trigger"
+            id="openInvitation"
+            type="button"
+            aria-label="Open the wedding invitation with music"
+        >
+
+            <svg
+                class="temple-art"
+                viewBox="0 0 600 440"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                aria-label="Beautiful illuminated Jain temple"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+
+                <defs>
+
+                    <linearGradient id="mb" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#bfb6a3"/>
+                        <stop offset=".3" stop-color="#f3ecdc"/>
+                        <stop offset=".55" stop-color="#fffaf0"/>
+                        <stop offset=".8" stop-color="#d3c9b5"/>
+                        <stop offset="1" stop-color="#8f8573"/>
+                    </linearGradient>
+
+                    <linearGradient id="mbFlat" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#f6efe0"/>
+                        <stop offset="1" stop-color="#b9ae9a"/>
+                    </linearGradient>
+
+                    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#fbe08a"/>
+                        <stop offset=".55" stop-color="#d79a2c"/>
+                        <stop offset="1" stop-color="#9a620f"/>
+                    </linearGradient>
+
+                    <radialGradient id="glowR">
+                        <stop offset="0" stop-color="#ffc766" stop-opacity=".7"/>
+                        <stop offset=".55" stop-color="#e0702a" stop-opacity=".22"/>
+                        <stop offset="1" stop-color="#e0702a" stop-opacity="0"/>
+                    </radialGradient>
+
+                    <radialGradient id="warm">
+                        <stop offset="0" stop-color="#ffb04a" stop-opacity=".5"/>
+                        <stop offset="1" stop-color="#ffb04a" stop-opacity="0"/>
+                    </radialGradient>
+
+                    <radialGradient id="interior" cx="50%" cy="75%" r="75%">
+                        <stop offset="0" stop-color="#ffcf7a"/>
+                        <stop offset=".6" stop-color="#9a5418"/>
+                        <stop offset="1" stop-color="#2a1608"/>
+                    </radialGradient>
+
+                    <radialGradient id="idolG" cx="50%" cy="60%" r="60%">
+                        <stop offset="0" stop-color="#fff0c0"/>
+                        <stop offset=".5" stop-color="#ffb347"/>
+                        <stop offset="1" stop-color="#7a3a0c"/>
+                    </radialGradient>
+
+                    <radialGradient id="lampG">
+                        <stop offset="0" stop-color="#ffd98a" stop-opacity=".95"/>
+                        <stop offset="1" stop-color="#ffd98a" stop-opacity="0"/>
+                    </radialGradient>
+
+                    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#43131f"/>
+                        <stop offset="1" stop-color="#2a0b14"/>
+                    </linearGradient>
+
+                    <linearGradient id="fade" x1="0" y1="332" x2="0" y2="440" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#fff"/>
+                        <stop offset="1" stop-color="#000"/>
+                    </linearGradient>
+
+                    <mask id="rm">
+                        <rect x="0" y="332" width="600" height="108" fill="url(#fade)"/>
+                    </mask>
+
+                    <!-- Side shrine -->
+
+                    <g id="shrine">
+
+                        <rect x="96" y="250" width="78" height="6" fill="url(#mbFlat)"/>
+                        <rect x="100" y="256" width="70" height="46" fill="url(#mb)"/>
+
+                        <rect x="108" y="268" width="8" height="34" fill="#2a1608"/>
+                        <rect x="124" y="268" width="8" height="34" fill="#2a1608"/>
+                        <rect x="140" y="268" width="8" height="34" fill="#2a1608"/>
+                        <rect x="156" y="268" width="8" height="34" fill="#2a1608"/>
+
+                        <path d="M104 250 C105 226 124 202 135 188 C146 202 165 226 166 250Z" fill="url(#mb)"/>
+
+                        <path d="M135 190 C128 214 120 232 118 250 M135 190 C142 214 150 232 152 250 M135 190 V250"
+                              stroke="#7b705c" stroke-opacity=".35" fill="none"/>
+
+                        <ellipse cx="135" cy="188" rx="8" ry="3.2" fill="url(#mbFlat)"/>
+                        <ellipse cx="135" cy="180" rx="3.5" ry="5" fill="url(#gold)"/>
+
+                    </g>
+
+                    <!-- Main temple -->
+
+                    <g id="tm">
+
+                        <rect x="60" y="318" width="480" height="14" fill="url(#mbFlat)"/>
+                        <rect x="84" y="302" width="432" height="16" fill="url(#mbFlat)"/>
+                        <rect x="84" y="302" width="432" height="2" fill="#fff" opacity=".55"/>
+
+                        <use href="#shrine"/>
+                        <use href="#shrine" transform="translate(600 0) scale(-1 1)"/>
+
+                        <!-- Side spires -->
+
+                        <path d="M205 218 C207 185 228 155 250 134 C262 150 270 175 272 218Z" fill="url(#mb)"/>
+                        <path d="M395 218 C393 185 372 155 350 134 C338 150 330 175 328 218Z" fill="url(#mb)"/>
+
+                        <ellipse cx="250" cy="134" rx="8" ry="3" fill="url(#mbFlat)"/>
+                        <ellipse cx="350" cy="134" rx="8" ry="3" fill="url(#mbFlat)"/>
+
+                        <ellipse cx="250" cy="126" rx="3.5" ry="6" fill="url(#gold)"/>
+                        <ellipse cx="350" cy="126" rx="3.5" ry="6" fill="url(#gold)"/>
+
+                        <!-- Main shikhara -->
+
+                        <path d="M232 218 C236 158 264 104 300 66 C336 104 364 158 368 218Z" fill="url(#mb)"/>
+
+                        <g stroke="#6f6554" stroke-opacity=".35" stroke-width="1.1" fill="none">
+
+                            <path d="M250 218 C252 165 276 110 300 70"/>
+                            <path d="M268 218 C270 168 286 118 300 70"/>
+                            <path d="M300 218 V70"/>
+                            <path d="M350 218 C348 165 324 110 300 70"/>
+                            <path d="M332 218 C330 168 314 118 300 70"/>
+
+                        </g>
+
+                        <g stroke="#6f6554" stroke-opacity=".55" stroke-width="1.6" fill="none">
+
+                            <path d="M252 170 Q300 178 348 170"/>
+                            <path d="M264 145 Q300 152 336 145"/>
+                            <path d="M275 120 Q300 126 325 120"/>
+                            <path d="M287 95 Q300 100 313 95"/>
+
+                        </g>
+
+                        <g stroke="#fff" stroke-opacity=".5" stroke-width="1" fill="none">
+
+                            <path d="M252 168 Q300 176 348 168"/>
+                            <path d="M264 143 Q300 150 336 143"/>
+                            <path d="M275 118 Q300 124 325 118"/>
+                            <path d="M287 93 Q300 98 313 93"/>
+
+                        </g>
+
+                        <!-- Kalash -->
+
+                        <ellipse cx="300" cy="66" rx="17" ry="6" fill="url(#mbFlat)" stroke="#9a8f7a" stroke-opacity=".6"/>
+
+                        <path d="M286 66 Q300 70 314 66" stroke="#9a8f7a" fill="none"/>
+
+                        <ellipse cx="300" cy="52" rx="7" ry="10" fill="url(#gold)"/>
+                        <rect x="297" y="40" width="6" height="5" fill="url(#gold)"/>
+                        <circle cx="300" cy="37" r="3" fill="url(#gold)"/>
+                        <path d="M300 24 L297.5 36 H302.5Z" fill="url(#gold)"/>
+
+                        <!-- Mandapa roofs -->
+
+                        <path d="M176 218 L222 196 H378 L424 218Z" fill="url(#mb)"/>
+                        <rect x="176" y="216" width="248" height="2.5" fill="#6f6554" opacity=".5"/>
+
+                        <path d="M204 196 L240 178 H360 L396 196Z" fill="url(#mb)"/>
+                        <rect x="204" y="194" width="192" height="2.5" fill="#6f6554" opacity=".5"/>
+
+                        <path d="M240 178 L262 164 H338 L360 178Z" fill="url(#mb)"/>
+                        <rect x="240" y="176" width="120" height="2.5" fill="#6f6554" opacity=".5"/>
+
+                        <ellipse cx="200" cy="216" rx="3" ry="4" fill="url(#gold)"/>
+                        <ellipse cx="400" cy="216" rx="3" ry="4" fill="url(#gold)"/>
+
+                        <!-- Temple columns -->
+
+                        <rect x="168" y="218" width="264" height="8" fill="url(#mbFlat)"/>
+                        <rect x="172" y="226" width="256" height="8" fill="url(#mb)"/>
+                        <rect x="180" y="234" width="240" height="68" fill="url(#interior)"/>
+
+                        <g fill="url(#mb)">
+
+                            <rect x="186" y="234" width="8" height="68"/>
+                            <rect x="216" y="234" width="8" height="68"/>
+                            <rect x="246" y="234" width="8" height="68"/>
+
+                            <rect x="346" y="234" width="8" height="68"/>
+                            <rect x="376" y="234" width="8" height="68"/>
+                            <rect x="406" y="234" width="8" height="68"/>
+
+                        </g>
+
+                        <g fill="url(#gold)">
+
+                            <rect x="184" y="232" width="12" height="4"/>
+                            <rect x="214" y="232" width="12" height="4"/>
+                            <rect x="244" y="232" width="12" height="4"/>
+
+                            <rect x="344" y="232" width="12" height="4"/>
+                            <rect x="374" y="232" width="12" height="4"/>
+                            <rect x="404" y="232" width="12" height="4"/>
+
+                        </g>
+
+                        <!-- Sanctum and Tirthankara -->
+
+                        <path d="M268 302 V262 Q268 240 300 240 Q332 240 332 262 V302Z" fill="#241206"/>
+
+                        <path class="idol-glow" d="M274 302 V264 Q274 246 300 246 Q326 246 326 264 V302Z" fill="url(#idolG)"/>
+
+                        <circle cx="300" cy="268" r="15" fill="none" stroke="#fff0c0" stroke-opacity=".6" stroke-width="1.2"/>
+
+                        <ellipse cx="300" cy="298" rx="17" ry="3.2" fill="#8a5414"/>
+
+                        <path d="M283 296 Q285 283 295 281 H305 Q315 283 317 296Z" fill="#f4d58e"/>
+                        <path d="M293 281 Q291 271 295.5 269 H304.5 Q309 271 307 281Z" fill="#f4d58e"/>
+                        <circle cx="300" cy="264" r="5" fill="#f4d58e"/>
+
+                        <path d="M268 302 V262 Q268 240 300 240 Q332 240 332 262 V302"
+                              fill="none" stroke="url(#gold)" stroke-width="2.4"/>
+
+                        <!-- Steps -->
+
+                        <rect x="250" y="302" width="100" height="6" fill="url(#mbFlat)"/>
+                        <rect x="246" y="308" width="108" height="6" fill="url(#mbFlat)"/>
+                        <rect x="242" y="314" width="116" height="6" fill="url(#mbFlat)"/>
+                        <rect x="238" y="320" width="124" height="6" fill="url(#mbFlat)"/>
+                        <rect x="234" y="326" width="132" height="6" fill="url(#mbFlat)"/>
+
+                        <g fill="#6f6554" opacity=".4">
+
+                            <rect x="250" y="307" width="100" height="1"/>
+                            <rect x="246" y="313" width="108" height="1"/>
+                            <rect x="242" y="319" width="116" height="1"/>
+                            <rect x="238" y="325" width="124" height="1"/>
+
+                        </g>
+
+                    </g>
+
+                </defs>
+
+                <!-- Background glow -->
+
+                <ellipse class="aura" cx="300" cy="200" rx="290" ry="230" fill="url(#glowR)"/>
+
+                <!-- Reflecting pool -->
+
+                <rect x="0" y="332" width="600" height="108" fill="url(#water)"/>
+
+                <g mask="url(#rm)" opacity=".34">
+                    <use href="#tm" transform="translate(0 664) scale(1 -1)"/>
+                </g>
+
+                <!-- Water ripples -->
+
+                <g stroke="#cfd6ff" stroke-width="1" fill="none" opacity=".16">
+
+                    <g class="ripple">
+                        <path d="M120 350 H300 M360 362 H520 M60 376 H240"/>
+                    </g>
+
+                    <g class="ripple b">
+                        <path d="M200 356 H400 M420 384 H560 M90 398 H280 M300 408 H480"/>
+                    </g>
+
+                </g>
+
+                <!-- Main temple -->
+
+                <use href="#tm"/>
+
+                <!-- Warm lighting -->
+
+                <g class="lights">
+
+                    <ellipse cx="300" cy="300" rx="290" ry="120" fill="url(#warm)"/>
+                    <ellipse cx="300" cy="230" rx="120" ry="150" fill="url(#warm)" opacity=".6"/>
+
+                </g>
+
+                <!-- Oil lamps -->
+
+                <g>
+
+                    <g class="lamp">
+                        <circle cx="110" cy="301" r="9" fill="url(#lampG)"/>
+                        <circle cx="110" cy="301" r="1.8" fill="#fff1c4"/>
+                    </g>
+
+                    <g class="lamp">
+                        <circle cx="150" cy="301" r="9" fill="url(#lampG)"/>
+                        <circle cx="150" cy="301" r="1.8" fill="#fff1c4"/>
+                    </g>
+
+                    <g class="lamp">
+                        <circle cx="190" cy="301" r="9" fill="url(#lampG)"/>
+                        <circle cx="190" cy="301" r="1.8" fill="#fff1c4"/>
+                    </g>
+
+                    <g class="lamp">
+                        <circle cx="230" cy="301" r="9" fill="url(#lampG)"/>
+                        <circle cx="230" cy="301" r="1.8" fill="#fff1c4"/>
+                    </g>
+
+                    <g class="lamp">
+                        <circle cx="370" cy="301" r="9" fill="url(#lampG)"/>
+                        <circle cx="370" cy="301" r="1.8" fill="#fff1c4"/>
+                    </g>
+
+                    <g class="lamp">
+                        <circle cx="410" cy="301" r="9" fill="url(#lampG)"/>
+                        <circle cx="410" cy="301" r="1.8" fill="#fff1c4"/>
+                    </g>
+
+                    <g class="lamp">
+                        <circle cx="450" cy="301" r="9" fill="url(#lampG)"/>
+                        <circle cx="450" cy="301" r="1.8" fill="#fff1c4"/>
+                    </g>
+
+                    <g class="lamp">
+                        <circle cx="490" cy="301" r="9" fill="url(#lampG)"/>
+                        <circle cx="490" cy="301" r="1.8" fill="#fff1c4"/>
+                    </g>
+
+                </g>
+
+                <!-- Mist -->
+
+                <ellipse class="mist" cx="300" cy="334" rx="300" ry="12" fill="#fff" opacity=".07"/>
+
+            </svg>
+
+            <span class="temple-click-label">Turn up the volume & enter our celebration</span>
+           <!-- <span class="temple-click-icon" aria-hidden="true">↓</span> -->
+
+        </button>
+
+        <div class="gate-date">27 January 2027 · Nagpur</div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     NAVIGATION
+====================================== -->
+
+<header class="topbar">
+
+    <div class="nav">
+
+        <div class="brand">
+            <h3>Akshay <span style="color:var(--gold)">&</span> Prashasti</h3>
+        </div>
+
+        <nav class="navlinks" aria-label="Main navigation">
+
+            <button class="music-btn" id="musicToggle" type="button" aria-pressed="false">
+                ♫ Click for music
+            </button>
+
+            <a href="#families">Families</a>
+            <a href="#story">Our Story</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#details">Celebrations</a>
+            <a href="#venue">Venue</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- =====================================
+     MAIN INVITATION
+====================================== -->
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-inner fade">
+      <div class="ornament" aria-hidden="true">❁ ❧ ❁</div>
+      <div class="eyebrow">|| Shubh Vivah ||</div>
+      <p class="invite-text">With the divine blessings of Bhagwan Mahavir and the love and blessings of our elders and families,</p>
+      <p class="invite-text">we take immense pleasure in cordially inviting you and your family to join us in celebrating the auspicious Wedding ceremony of</p>
+      <h1>Chi. Akshay <span style="color:var(--gold)">&</span>  Chi. Sau. Ka. Prashasti</h1>
+      <p class="invite-text">as they embark upon a new journey of life, bound by love, understanding, mutual respect, and lifelong companionship on</p>
+      <div class="date-line"><span class="dl-date">27<sup>th</sup> January 2027</span><span class="dl-place">Nagpur</span></div>
+    </div>
+  </section>
+
+  <section class="families" id="families">
+    <div class="inner">
+      <div class="kicker">With the blessings of</div><h2>Our Families</h2>
+      <div class="divider">❀</div>
+      <p class="intro">With immense joy and the blessings of our elders, we invite you to join us in celebrating the auspicious wedding of our dear grandchildren.</p>
+      <div class="parents">
+        <article class="parent-card">
+          <div class="kicker">Groom's family</div>
+          <h3>Chi. Akshay</h3>
+          <p class="relation">Grand Son of</p>
+          <p class="pname">Mr. Vasantrao Paramaj<br>&amp;<br>Mrs. Shashikala Paramaj</p>
+        </article>
+        <article class="parent-card">
+          <div class="kicker">Bride's family</div>
+          <h3>Chi. Sau. Ka. Prashasti</h3>
+          <p class="relation">Grand Daughter of</p>
+          <p class="pname">Mr. Nemikumar Sarode (Jain)<br>&amp;<br>Mrs. Nalini Sarode (Jain)</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="countdown-section" id="countdown">
+    <div class="inner">
+      <div class="kicker">Save the date</div><h2>A day to remember</h2>
+      <div class="divider">❀</div>
+      <p class="intro">Your presence will make our special day even more memorable. We cannot wait to celebrate love, laughter and new beginnings with you.</p>
+      <div class="countdown" aria-live="polite">
+        <div class="countbox"><strong id="days">—</strong><span>Days</span></div>
+        <div class="countbox"><strong id="hours">—</strong><span>Hours</span></div>
+        <div class="countbox"><strong id="minutes">—</strong><span>Minutes</span></div>
+        <div class="countbox"><strong id="seconds">—</strong><span>Seconds</span></div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="shareBtn" type="button">Share on WhatsApp</button>
+        <button class="btn outline" id="calendarBtn" type="button">＋ Add to Calendar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="inner">
+      <div class="kicker">The begining of</div><h2>Our Beautiful Journey</h2>
+      <div class="divider">❀</div>
+      <p class="intro">Every love story is special, and ours is bringing two families together for a lifetime of memories.</p>
+      <div class="story-grid">
+        <img class="story-photo" src="Journey.JPG" alt="Romantic wedding celebration" loading="lazy">
+        <div class="story-copy">
+          <div class="kicker">A Fairy Tale - From first call to forever</div>
+		  <div class="brand">
+            <h3>Akshay <span style="color:var(--gold)">&</span> Prashasti</h3>
+        </div>
+          <p>Some love stories take years to unfold, while some just need one phone call. And ours? Well, ours began with a little help from our families and a whole lot of unexpected magic! We met through our relatives, never imagining that one simple phone call would change our lives forever. From the very first conversation, something just clicked. The vibes matched, the connection felt effortless, and it was as if we had known each other for much longer. And in a moment that neither of us could have planned, we found ourselves saying “I Love You” on that very first call! ❤️ A day later, we finally met in person, and somehow, everything felt even more certain. There were no second thoughts, no doubts, just two hearts knowing that they had found something truly special. We knew we didn’t want to wait to become each other’s forever. And here we are today, turning that unexpected beginning into our most beautiful chapter yet. From strangers connected by a phone call to soulmates ready to walk through life hand in hand. One call, one meeting, two hearts, and a lifetime to go. We can’t wait to begin our forever! ♾️❤️</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+
+  <section id="gallery">
+    <div class="inner">
+      <div class="kicker">Gallery of Love</div>
+      <h2>Our Forever Moments</h2>
+      <div class="divider">❀</div>
+      <p class="intro">Glimpses of the smiles, moments and magic we've shared.</p>
+
+      <div class="gallery">
+        <figure>
+          <img src="begining_1.jpg" alt="Wedding couple outdoors" loading="lazy">
+          <figcaption>THE BEGINNING OF OUR FAVOURITE CHAPTER</figcaption>
+        </figure>
+
+        <figure>
+          <img src="Happy_Moments_1.jpg" alt="Wedding celebration" loading="lazy">
+          <figcaption>A BOND BEYOND WORDS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="joy_1.jpg" alt="Wedding flowers" loading="lazy">
+          <figcaption>A LITTLE TWIRL, A LIFETIME OF TOGETHERNESS</figcaption>
+        </figure>
+		
+		<figure>
+          <img src="proposal.jpg" alt="Wedding flowers" loading="lazy">
+          <figcaption>THE PROPOSAL</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEDDING EVENTS -->
+
+  <section class="events-section" id="details">
+    <div class="inner">
+      <div class="kicker">The festivities</div>
+      <h2>Wedding Celebrations</h2>
+      <div class="divider">❀</div>
+      <p class="intro">Join us for the celebrations.</p>
+
+      <div class="events">
+
+        <article class="event">
+          <div class="time">26 January 2027 · Time 10 AM Onwards</div>
+          <h3>Haldi</h3>
+          <p>A little haldi, a lot of masti, and endless memories to make! Join us for a sunshine-filled celebration of love, laughter and happiness!</p>
+        </article>
+
+        <article class="event">
+          <div class="time">26 January 2027 · Time 06 PM Onwards</div>
+          <h3>Simant Poojan & Sangeet</h3>
+          <p>A beautiful welcome rooted in traditions, followed by a night filled with music, glamour and celebration! Let's celebrate new beginnings with heartfelt blessings, lively beats and memories to treasure forever! ❤</p>
+        </article>
+
+        <article class="event">
+          <div class="time">27 January 2027 · Time 12.39 PM</div>
+          <h3>Wedding Ceremony</h3>
+          <p>An auspicious day, a timeless bond and a lifetime of promises! Be a part of this beautiful celebration as Akshay & Prashasti begin their journey together.</p>
+        </article>
+
+        <article class="event">
+          <div class="time">27 January 2027 · Time 07 PM Onwards</div>
+          <h3>Reception & Dinner</h3>
+          <p>An evening of celebration awaits as we come together to mark a beautiful new beginning. Grace us with your presence and bless the couple with your love and good wishes.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE -->
+
+  <section class="venue" id="venue">
+    <div class="inner">
+      <h2>Join us at</h2>
+      <div class="divider">❀</div>
+
+      <div class="venue-details">
+        <h2>Chokar Dhani, Nagpur</h2>
+        <p class="invite-text">on 27th January 2027</p>
+        <div class="divider">❀</div>
+      </div>
+	 
+      <a
+        class="btn"
+        href="https://www.google.com/maps/search/?api=1&query=Chokar+Dhani+Nagpur"
+        target="_blank"
+        rel="noopener"
+      >
+        Open Google Maps ↗
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div>With warm regards</div>
+    <strong>Paramaj &amp; Sarode Family <span class="heart">♥</span></strong>
+    <strong>Akshay &amp; Prashasti</strong>
+
+    <div style="font-family:Poppins,sans-serif;font-size:.68rem;margin-top:12px;color:#d8c3a4">
+        <h3>|| With love and blessings || Shubh Vivah ||</h3>
+    </div>
+
+</footer>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<button class="back-top" id="backTop" type="button" aria-label="Back to top">↑</button>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo">×</button>
+    <div>
+        <img id="lightboxImage" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+</div>
+
+<!-- MUSIC -->
+
+<audio id="weddingMusic" src="music.mp3" loop preload="auto" playsinline></audio>
+
+<script>
+
+/* =====================================
+   BACKGROUND MUSIC  (src: music.mp3)
+===================================== */
+
+const music = document.getElementById("weddingMusic");
+const musicToggle = document.getElementById("musicToggle");
+
+music.volume = 0.7;
+
+function setMusicButton(isPlaying) {
+    musicToggle.textContent = isPlaying ? "♫ Music: On" : "♫ Music: Off";
+    musicToggle.setAttribute("aria-pressed", isPlaying ? "true" : "false");
+}
+
+music.addEventListener("play", () => setMusicButton(true));
+music.addEventListener("pause", () => setMusicButton(false));
+
+music.addEventListener("error", () => {
+    const e = music.error;
+    const reasons = {
+        1: "Loading was aborted.",
+        2: "Network error while loading.",
+        3: "The file could not be decoded (not a valid MP3).",
+        4: "File not found or format not supported. Check that music.mp3 is in the same folder and the name matches exactly."
+    };
+    console.error("Audio error:", e);
+    alert(reasons[e ? e.code : 4] || "Unknown audio error.");
+});
+
+musicToggle.addEventListener("click", async () => {
+    if (music.paused) {
+        try {
+            await music.play();
+        } catch (err) {
+            console.error("Play failed:", err);
+            if (err.name === "NotAllowedError") {
+                alert("The browser blocked playback. Please tap the music button again.");
+            }
+        }
+    } else {
+        music.pause();
+    }
+});
+
+/* =====================================
+   OPEN TEMPLE INVITATION + START MUSIC
+   (tap on temple = user gesture, so
+    mobile browsers allow audio to play)
+===================================== */
+
+const templeButton = document.getElementById("openInvitation");
+const templeGate = document.getElementById("templeGate");
+
+templeButton.addEventListener("click", async () => {
+    // The tap is a valid user gesture, so attempt music playback here.
+    if (music.paused) {
+        try { await music.play(); }
+        catch (err) { console.warn("Music could not start automatically:", err); }
+    }
+
+    templeGate.classList.add("is-opening");
+    window.setTimeout(() => {
+        templeGate.classList.add("is-gone");
+        document.getElementById("home").scrollIntoView({ behavior: "smooth", block: "start" });
+        document.body.classList.add("invitation-opened");
+    }, 850);
+});
+
+/* =====================================
+   WEDDING CONFIGURATION
+===================================== */
+
+const WEDDING = {
+    names: "Akshay & Prashasti",
+    date: "2027-01-27",
+    dateLabel: "27 January 2027",
+    venue: "Chokar Dhani, Nagpur",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Chokar+Dhani+Nagpur",
+    startTime: "00:00:00",
+    timeZoneOffset: "+05:30"
+};
+
+/* =====================================
+   COUNTDOWN TIMER
+===================================== */
+
+const weddingMoment = new Date(
+    `${WEDDING.date}T${WEDDING.startTime}${WEDDING.timeZoneOffset}`
+).getTime();
+
+function updateCountdown() {
+    const diff = Math.max(0, weddingMoment - Date.now());
+
+    document.getElementById("days").textContent = Math.floor(diff / 86400000);
+    document.getElementById("hours").textContent = Math.floor((diff % 86400000) / 3600000);
+    document.getElementById("minutes").textContent = Math.floor((diff % 3600000) / 60000);
+    document.getElementById("seconds").textContent = Math.floor((diff % 60000) / 1000);
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+/* =====================================
+   WHATSAPP SHARING
+===================================== */
+
+function invitationText() {
+    return `You're invited to celebrate ${WEDDING.names}' wedding!
+
+Date: ${WEDDING.dateLabel}
+Venue: ${WEDDING.venue}
+
+We look forward to celebrating with you!
+${window.location.href}`;
+}
+
+document.getElementById("shareBtn").addEventListener("click", () => {
+    window.open(
+        "https://wa.me/?text=" + encodeURIComponent(invitationText()),
+        "_blank",
+        "noopener"
+    );
+});
+
+/* =====================================
+   ADD TO CALENDAR
+===================================== */
+
+document.getElementById("calendarBtn").addEventListener("click", () => {
+
+    const ics = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Akshay and Prashasti//Wedding Invitation//EN",
+        "CALSCALE:GREGORIAN",
+        "BEGIN:VEVENT",
+        "UID:akshay-prashasti-wedding-20270127@invitation",
+        "DTSTAMP:20261108T000000Z",
+        "DTSTART;VALUE=DATE:20270127",
+        "DTEND;VALUE=DATE:20270128",
+        "SUMMARY:Akshay & Prashasti Wedding",
+        "LOCATION:Chokar Dhani, Nagpur",
+        "DESCRIPTION:Wedding invitation.",
+        "END:VEVENT",
+        "END:VCALENDAR"
+    ].join("\r\n");
+
+    const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "Akshay-Prashasti-Wedding.ics";
+
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+
+
+/* =====================================
+   SCROLL REVEALS & PREMIUM INTERACTIONS
+===================================== */
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const revealTargets = document.querySelectorAll(
+    "section:not(.temple-gate) .inner, .parent-card, .countbox, .story-photo, .story-copy, .gallery figure, .event, .venue-details"
+);
+revealTargets.forEach((el, index) => {
+    el.classList.add("reveal");
+    if (el.classList.contains("parent-card") || el.classList.contains("gallery") || el.classList.contains("event")) {
+        el.classList.add("reveal-scale");
+    }
+});
+if ("IntersectionObserver" in window && !reduceMotion) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: "0px 0px -45px 0px" });
+    revealTargets.forEach(el => revealObserver.observe(el));
+} else {
+    revealTargets.forEach(el => el.classList.add("is-visible"));
+}
+
+const progressBar = document.getElementById("scrollProgress");
+const backTop = document.getElementById("backTop");
+const topbar = document.querySelector(".topbar");
+function updateScrollUI() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    progressBar.style.width = `${progress}%`;
+    backTop.classList.toggle("visible", window.scrollY > 500);
+    topbar.classList.toggle("scrolled", window.scrollY > 12);
+}
+window.addEventListener("scroll", updateScrollUI, { passive: true });
+updateScrollUI();
+backTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+/* Elegant gallery lightbox */
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
+const lightboxClose = document.getElementById("lightboxClose");
+
+document.querySelectorAll(".gallery img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImage.src = img.currentSrc || img.src;
+        lightboxImage.alt = img.alt || "Wedding gallery photograph";
+        lightboxCaption.textContent = img.closest("figure")?.querySelector("figcaption")?.textContent || "";
+        lightbox.classList.add("open");
+        document.body.style.overflow = "hidden";
+        lightboxClose.focus();
+    });
+});
+function closeLightbox() {
+    lightbox.classList.remove("open");
+    document.body.style.overflow = "";
+}
+lightboxClose.addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", event => {
+    if (event.target === lightbox) closeLightbox();
+});
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeLightbox();
+});
+
+/* Keep the music button label accurate if playback is interrupted. */
+setMusicButton(!music.paused);
+
+</script>
+
+</body>
+</html>
